@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Work Sans");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    max-width: clamp(720px, 1300px, 1920px);
+    font-family: 'Nunito';
+    margin: 0 auto;
+}
+header {
+    width: 72vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.NavBar {
+    display: flex;
+    width: 310px;
+    place-content: center space-between;
+}
+.NavBar__Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 80px;
+    height: 20px;
+    margin-top: 8px;
+}
+.NavBar__SignUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    color: #156963;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .4s;
+}
+.NavBar__SignIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 111px;
+    height: 36px;
+    background: #156963;
+    color: #fff;
+    text-decoration: none; 
+}
+.NavBar__SignUp:hover {
+    transition: .4s;
+    background: rgba(0, 0, 0, .1);
+}
+.Main {
+    width: 100%;
+    display: flex;
+    margin-bottom: 83px;
+}
+.Main__Image {
+    object-fit: contain;
+    position: relative;
+    width: 47.5%;
+}
+.Main__Box {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    padding: 0px;
+    gap: 24px;
+    width: 519px;
+    height: 286px;
+}
+.Main__MainBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+.Main__Title {
+    width: 523px;
+    height: 166px;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 83px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #156963;
+}
+.Main__Desc {
+    width: 89.8%;
+    height: 96px;
+    font-family: 'Montserrat'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C1500;
+}
+.Main__Control {
+    width: clamp(400px, 586px, 600px);
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-items: flex-end;
+}
+.Main__Prev {
+    padding: 24px;
+    width: 320px;
+    height: 160px;
+    color: #156963
+}
+.Main__Next {
+    padding: 24px;
+    width: 320px;
+    height: 160px;
+    background-color: #156963;
+    color: #fff
+}
+.Main__ControlName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    opacity: .5;
+    font-size: 24px;
+}
+.Plant {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: medium;
+}
+.advantages {
+    display: flex;
+    margin-bottom: 83px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.advantages__container {
+    max-width: 350px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, .1);
+}
+.advantages__title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    color: #156963;
+}
+.advantages__desc {
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+.prices {
+    width: 100%;
+    font-family: 'Montserrat';
+    margin-bottom: 83px;
+}
+.prices__hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: .7;
+}
+.prices__title {
+    font-size: 25px;
+    
+}
+.prices__box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.prices__container {
+    font-size: 18px;
+}
+.prices__price {
+    font-weight: bold;
+}
+footer {
+    border-top: 2px solid rgba(21, 105, 99, .1) ;
+    font-size: 20px;
+    font-family: 'Work Sans';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.Info {
+    width: 400px;
+    margin: 40px;
+}
+.CompName {
+    color: #156963;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.FullName {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.title {
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+.input {
+    font-size: 20px;
+    font-family: 'Work Sans';
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000;
+    border: 1.5px solid rgba(0, 0, 0, .3);
+}
+.button {
+    margin-top: 15px;
+}
+.buttonemail {
+    width: fit-content;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #156963;
+    cursor: crosshair;
+}
+.Plant1_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 83px;
+} 
+.Plant1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-right: 40px;
+}
+.Plant2 {
+    display: block;
+}
+.Plant__title {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: bold;
+}
+.Plant__desc {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: lighter;
+    opacity: .8;
+}
+.Plant1_img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.VisitShop {
+    margin-bottom: 120px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F3F4F6;
+}
+.VisitShop__Title {
+    font-family: 'Montserrat';
+    width: 90%;
+    font-size: 55px;
+    font-weight: bolder; 
+    margin-bottom: 50px;
+}
+.VisitShop__Main {
+    margin: 90px;
+}
+.VisitShop__Button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 40px 12px 40px;
+    background-color: #156963;
+}
+.Plant_3_Img {
+    width: 52%;
+}
